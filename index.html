@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="icon-person-container">
+          <div class="icon-person"></div>
+        </div>
+
+        <div class="col-sm-4 left-container">
+          <h1>Inscrivez-vous</h1>
+          <p>Créez un compte gratuit sur Futur Digital</p>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" />
+              <label class="form-label" for="name">Nom Complet</label>
+            </div>
+            <!--form-group-->
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="email" required />
+              <label for="email">Adresse e-mail</label>
+            </div>
+            <!--form-group-->
+
+            <div class="form-group">
+              <div class="toggle-password"></div>
+
+              <input type="password" class="form-control" id="password" />
+              <small>
+                Le mot de pase doit contenir entre 4 et 6 caractères
+              </small>
+              <label for="password">Mot de passe</label>
+            </div>
+            <!--form-group-->
+
+            <div class="form-group">
+              <div class="toggle-password confirmation-toggle"></div>
+              <input
+                type="password"
+                class="form-control"
+                id="password-confirmation"
+              />
+
+              <label for="password-confirmation">
+                Confirmer le mot de passe
+              </label>
+            </div>
+            <!--form-group-->
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="policy" />
+              <p class="form-check-label" for="policy">
+                j'ai accepté les
+                <a class="link" href="#">conditions générales</a>
+              </p>
+            </div>
+            <!--form-check-->
+
+            <button id="send" class="btn">S'INSCRIRE</button>
+          </form>
+          <!--form-->
+        </div>
+        <!--left-container-->
+
+        <div class="col-sm-8 right-container">
+          <div class="image-container">
+            <img src="./images/Image.png" alt="form image" class="img" />
+          </div>
+        </div>
+        <!--right-container-->
+      </div>
+      <!--row-->
+    </div>
+
+    <!--container-->
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

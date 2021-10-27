@@ -1,0 +1,9 @@
+@media only screen and (max-width: 750px) {
+  .right-container {
+    display: none;
+  }
+  .container {
+    margin: auto;
+    padding-top: 30px;
+  }
+}
